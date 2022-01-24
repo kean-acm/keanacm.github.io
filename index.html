@@ -1,60 +1,171 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
   <head>
-  <base href="/">
-  <script src="https://code.angularjs.org/1.2.13/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-  <script src="app.js"></script>
-  <!-- Meta -->
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="title" content="Kean University Association for Computing Machinery">
-  <meta name="description" content="The Kean University Student Chapter of the Association for Computing Machinery (ACM) exists to promote an increased knowledge of the science, design, development, language, and application of computing software and hardware.
-  ACM is widely recognized as the premier membership organization for computing professionals, delivering resources that advance computing as a science and a profession; enable professional development; and promote policies and research that benefit society.">
-  <meta name="keywords" content="Association For Computing Machinery,HackKean,Hack Kean,Computer Science,Kean,Kean University">
-  <link rel="canonical" href="http://keanacm.com/">
-  <link rel="icon" href="../ACM_Bold.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kean ACM - Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/976bcf3f29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href=""><img src="assets/ACM_Bold.png" alt="Home" /></a>
+        <div class="logo-text">
+          <h1 class="title">Kean University ACM</h1>
+          <h2 class="subtitle">Association for Computing Machinery</h2>
+        </div>
+      </div>
+      <nav>
+        <a href="">Home</a>
+        <a href="about.html">About</a>
+        <a href="">Events</a>
+        <a href="https://kean.campuslabs.com/engage/organization/acm"
+          >Join on Cougarlink</a
+        >
+        <a href="hackkean.html">Hackkean 2022</a>
+        <a href="http://yoda.kean.edu/~samurai/">Code Samurai</a>
+        <a href="http://yoda.kean.edu/studyplans/">Resources</a>
+      </nav>
+    </header>
+    <main>
+      <div class="page-content">
+        <h1>Fall 2021</h1>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" />
-  <link rel="stylesheet" href="css/main.css">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <meta property=”og:image” content=”https://keanacm.github.io/ACM_Bold.png” />
-</head>
+        <div class="event">
+          <div class="headline">
+            <span>General Meeting #1: Introductions</span>
+            <span>ACM</span>
+            <p>
+              We will introduce everyone, talk about our summer experiences,
+              discuss our plans, and share helpful resources.
+            </p>
+          </div>
+          <div class="meta">
+            <span class="date">
+              <i class="fa fa-calendar-o"></i>
+              <span> September 16th, 2021</span>
+            </span>
+            <span class="time">
+              <i class="fa fa-clock-o"></i>
+              <span>3:30 p.m.</span>
+            </span>
+            <span class="loc">
+              <i class="fa fa-map-marker"></i>
+              <span>GLAB 407(in person) or Zoom</span>
+            </span>
+          </div>
+        </div>
 
+        <div class="event">
+          <div class="headline">
+            <span>Github/Career Workshop</span>
+            <span>ACM</span>
+            <p>
+              We will teach the basics of using git and GitHub for version
+              control, as it is a very important skill to know for your first
+              job, internship, or research project. We will also discuss
+              resources to prepare and apply for jobs.
+            </p>
+          </div>
+          <div class="meta">
+            <span class="date">
+              <i class="fa fa-calendar-o"></i>
+              <span> September 23rd, 2021</span>
+            </span>
+            <span class="time">
+              <i class="fa fa-clock-o"></i>
+              <span>3:30 p.m.</span>
+            </span>
+            <span class="loc">
+              <i class="fa fa-map-marker"></i>
+              <span>GLAB 407(in person) or Zoom</span>
+            </span>
+          </div>
+        </div>
 
-  <body ng-app="App">
+        <div class="event">
+          <div class="headline">
+            <span>General Meeting #2: Coding Challenges</span>
+            <span>ACM</span>
+            <p>
+              We will discuss and take feedback on our upcoming events. We will
+              also do some coding challenges and prepare students for our
+              upcoming hackathon (in Spring 2022) and coding interviews.
+            </p>
+          </div>
+          <div class="meta">
+            <span class="date">
+              <i class="fa fa-calendar-o"></i>
+              <span> October 7th, 2021</span>
+            </span>
+            <span class="time">
+              <i class="fa fa-clock-o"></i>
+              <span>3:30 p.m.</span>
+            </span>
+            <span class="loc">
+              <i class="fa fa-map-marker"></i>
+              <span>GLAB 407(in person) or Zoom</span>
+            </span>
+          </div>
+        </div>
 
-    <aside class="sidebar-left">
-  <div class="logo">
-      <a href="https://keanacm.github.io"><img src="ACM_Bold.png" height="200" width="200" /></a>
-    
-  </div>
-  <div class="title">
-    <h1>Kean University ACM</h1>
-    <h4>Association for Computing Machinery</h4>
-  </div>
-    <div class="links">
-      <a name="home" ui-sref="home">home</a>
-      <a name="about" ui-sref="about">about</a>
-      <a name="cougarlink" target="_blank" href="https://kean.campuslabs.com/engage/organization/acm">cougarlink</a>
-      <a name="meeting schedule" target="_blank" href="https://calendar.google.com/calendar/b/1?cid=a2Vhbi5lZHVfbGo1NDllajdlcjVjcmFicWVvaWhqZGk2cmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">google calendar</a>
-      <a name="hack kean" target="_blank" href="http://hackkean.org">hack kean</a>
-      <a name="resources" ui-sref="resources">resources</a>
-      <a name="resume" target="_blank" href="https://goo.gl/rFK4QA">resume dropbox</a>
-      <a name="advising" target="_blank" href="https://sites.google.com/site/cpstechadvisingwebsite/home">kean cs/it advising</a>
-      
-      <!-- add code samurai hours -->
-      <!-- volunteer, hack kean link -->
-    </div>
-</aside>
+        <div class="event">
+          <div class="headline">
+            <span>Discord BOT Workshop</span>
+            <span>ACM</span>
+            <p>
+              We go over the basics of building an AI and start a club project
+              that we will all work on as a club throughout the year and
+              possibly beyond.
+            </p>
+          </div>
+          <div class="meta">
+            <span class="date">
+              <i class="fa fa-calendar-o"></i>
+              <span> October 21st, 2021</span>
+            </span>
+            <span class="time">
+              <i class="fa fa-clock-o"></i>
+              <span>3:30 p.m.</span>
+            </span>
+            <span class="loc">
+              <i class="fa fa-map-marker"></i>
+              <span>GLAB 407(in person) or Zoom</span>
+            </span>
+          </div>
+        </div>
 
-<div class="container">
-  <div ui-view></div>
-</div>
-</body>
-
+        <div class="event">
+          <div class="headline">
+            <span>General Meeting 3: Portfolios</span>
+            <span>ACM</span>
+            <p>
+              We will meet to finalize our plans for Spring 2022, and also
+              discuss portfolios and how to utilize GitHub pages and similar
+              resources to create one.
+            </p>
+          </div>
+          <div class="meta">
+            <span class="date">
+              <i class="fa fa-calendar-o"></i>
+              <span> November 18th, 2021</span>
+            </span>
+            <span class="time">
+              <i class="fa fa-clock-o"></i>
+              <span>3:30 p.m.</span>
+            </span>
+            <span class="loc">
+              <i class="fa fa-map-marker"></i>
+              <span>GLAB 407(in person) or Zoom</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
