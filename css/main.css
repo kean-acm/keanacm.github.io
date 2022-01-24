@@ -40,11 +40,12 @@ main {
 }
 .logo .title {
   color: white;
-  font-size: 24px;
+  font-size: x-large;
+  font-weight: 600;
 }
 .logo .subtitle {
   color: white;
-  font-size: 16px;
+  font-size: large;
 }
 .logo a img {
   width: 160px;
@@ -122,4 +123,20 @@ nav a:hover {
 .meta {
   color: gray;
   margin-bottom: 10px;
+}
+
+/*about*/
+.officers {
+  text-align: center;
+  display: block;
+}
+.officer {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+.officer p:nth-child(1) {
+  font-weight: 600;
+}
+.officer p:nth-child(1) {
 }
